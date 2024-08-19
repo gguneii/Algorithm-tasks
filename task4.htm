@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- İki array verilir. Bu iki array-dəki ortaq elementləri tapmaq üçün bir alqoritm yaz. Məsələn, [1, 2, 3, 4] və [3, 4, 5, 6] array-ləri üçün nəticə [3, 4] olmalıdır. -->
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6]
+        let arr2 = [3, 4, 2, 6]
+
+        for (let i = 0; i < arr.length; i++) {
+            for (let j = 0; j < arr2.length; j++) {
+                if (arr[i] == arr2[j]) {
+                    console.log(arr[i]);
+
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>

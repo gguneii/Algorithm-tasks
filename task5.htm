@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bir array verilir. Bu array-dən bütün təkrarlanan elementləri silmək və yalnız unikal elementlərdən ibarət yeni bir array qaytarmaq üçün bir alqoritm yaz. Məsələn, [1, 2, 2, 3, 4, 4, 5] array-i üçün nəticə [1, 2, 3, 4, 5] olmalıdır. -->
+    <script>
+        let arr = [1, 2, 2, 3, 4, 4, 5]
+        arr.sort((a, b) => a - b)
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] == arr[i + 1]) {
+                arr.splice(i, 1)
+            }
+
+        }
+        console.log(arr);
+
+    </script>
+
+</body>
+
+</html>

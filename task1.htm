@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Polindrom soz alqoritmi eger soz polindromdursa log da true eks halda folse yazsin   -->
+
+    <script>
+
+        function polindrom(soz) {
+            let tersi = soz.split('').reverse().join('')    
+            if (tersi == soz) return true
+            else  return false  
+        }
+        console.log(polindrom('ebe'));
+        console.log(polindrom('slm'));
+        console.log(polindrom('radar'));
+        console.log(polindrom('polo'));
+        console.log(polindrom('ahahaha'));
+    </script>
+</body>
+
+</html>
